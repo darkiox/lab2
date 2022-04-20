@@ -48,7 +48,7 @@ inputbrute = driver.find_element(By.ID,"password")
 for x in passposible:
     inputbrute.send_keys(x)
     #inputbrute.send_keys(Keys.ENTER)
-    time.sleep(10)
+    time.sleep(30)
 
 #Sección de reestablecimiento de contraseña
 
